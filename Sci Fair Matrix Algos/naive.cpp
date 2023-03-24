@@ -11,7 +11,7 @@ int maximum = 0;
 double average = 0;
 
 //The current matrice size (squares matrices only)
-const int n = 180; 
+const int n = 1024; 
 
 //A and B are input matrices, C is the product
 ll C[n][n];
@@ -42,11 +42,11 @@ void naive_mutliply(int A[n][n], int B[n][n], int q) {
 int main() {
     
     //Input file with matrices
-    freopen("180x180.in", "r", stdin); 
+    freopen("1024x1024.in", "r", stdin); 
     //Output file with results
-    freopen("Naive180.out", "w", stdout);
+    freopen("Naive1024.out", "w", stdout);
 
-    int testcases = 100;
+    int testcases = 5;
 
     //Looping through testcases
     for (int i = 0; i < testcases; i++) { 
