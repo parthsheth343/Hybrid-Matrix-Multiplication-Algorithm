@@ -15,10 +15,10 @@ ll maximum = 0;
 long double average = 0;
 
 //size of matrix
-const int p = 1024;
+const int p = 17;
 
 //crossover point tested
-const int crossover = 256;
+const int crossover = 16;
 
 //smaller power of 2 greater than p (to pad matrices with 0s until its sides are of form 2^n)
 const int r = pow(2, ceil(log2(p)));
@@ -52,6 +52,7 @@ vii substract(vii A, vii B) {
     return C;
 }
 
+//naive algorithm, for when the matrix size is less than the crossover point
 vii naive(vii A, vii B) {
     int n = A.size();
     vii C(n, vi (n, 0));
@@ -143,12 +144,12 @@ int main() {
     cin.tie(0);
 
     //reads input file
-    freopen("1024x1024.in", "r", stdin);
+    freopen("17x17.in", "r", stdin);
     //reads output file
-    freopen("HybridC256-1024.out", "w", stdout);
+    freopen("C16-17.out", "w", stdout);
 
     //number of testcases
-    int testcases = 10;
+    int testcases = 3;
 
     //looping through testcases
     for (int i = 0; i < testcases; i++) {

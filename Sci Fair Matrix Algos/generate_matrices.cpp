@@ -7,13 +7,13 @@ using namespace std;
 
 int main() {
     //creating the testcase file
-    freopen("1024x1024.in", "w", stdout);
+    freopen("17x17.in", "w", stdout);
 
     //size of the matrices to be generated
-    int n = 1024;    
+    int n = 17;    
 
     //number of testcases
-    int testcases = 5;      
+    int testcases = 3;      
 
     //random number gen          
     srand(time(NULL));
